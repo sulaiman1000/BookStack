@@ -57,8 +57,8 @@ return [
     |
     */
 
-    'locale' => env('APP_LANG', 'en'),
-    'locales' => ['en', 'de', 'es', 'es_AR', 'fr', 'nl', 'pt_BR', 'sk', 'ja', 'pl', 'it', 'ru'],
+    'locale' => env('APP_LANG', 'ar'),
+    'locales' => ['ar','en', 'de', 'es', 'es_AR', 'fr', 'nl', 'pt_BR', 'sk', 'ja', 'pl', 'it', 'ru'],
 
     /*
     |--------------------------------------------------------------------------

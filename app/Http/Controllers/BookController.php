@@ -5,9 +5,12 @@ use BookStack\Book;
 use BookStack\Repos\EntityRepo;
 use BookStack\Repos\UserRepo;
 use BookStack\Services\ExportService;
+use Dompdf\Dompdf;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Views;
+use Anam\PhantomMagick\Converter;
+
 
 class BookController extends Controller
 {
@@ -286,7 +289,7 @@ class BookController extends Controller
         $book = $this->entityRepo->getBySlug('book', $bookSlug);
         $pdfContent = $this->exportService->bookToPdf($book);
         return response()->make($pdfContent, 200, [
-            'Content-Type'        => 'application/octet-stream',
+            'Content-Type'        => 'application/octet-stream;text/html; charset=utf-8',
             'Content-Disposition' => 'attachment; filename="' . $bookSlug . '.pdf'
         ]);
     }

@@ -2,7 +2,6 @@
 <html class="shaded">
 <head>
     <title>{{ setting('app-name') }}</title>
-
     <!-- Meta -->
     <meta name="viewport" content="width=device-width">
     <meta name="token" content="{{ csrf_token() }}">
@@ -10,9 +9,17 @@
     <meta charset="utf-8">
 
     <!-- Styles and Fonts -->
-    <link rel="stylesheet" href="{{ versioned_asset('css/styles.css') }}">
-    <link rel="stylesheet" media="print" href="{{ versioned_asset('css/print-styles.css') }}">
-    <link rel="stylesheet" href="{{ baseUrl("/libs/material-design-iconic-font/css/material-design-iconic-font.min.css") }}">
+    @if(app()->getLocale()=='ar')
+        <link rel="stylesheet" href="{{ versioned_asset('css/ar/styles.css') }}">
+        <link rel="stylesheet" media="print" href="{{ versioned_asset('css/print-styles.css') }}">
+        <link rel="stylesheet" href="{{ baseUrl('/libs/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
+    @else
+
+        <link rel="stylesheet" href="{{ versioned_asset('css/styles.css') }}">
+        <link rel="stylesheet" media="print" href="{{ versioned_asset('css/print-styles.css') }}">
+        <link rel="stylesheet" href="{{ baseUrl('/libs/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
+
+    @endif
 
     <!-- Scripts -->
     <script src="{{ baseUrl("/libs/jquery/jquery.min.js?version=2.1.4") }}"></script>
@@ -34,7 +41,7 @@
 
                 <a href="{{ baseUrl('/') }}" class="logo">
                     @if(setting('app-logo', '') !== 'none')
-                        <img class="logo-image" src="{{ setting('app-logo', '') === '' ? baseUrl('/logo.png') : baseUrl(setting('app-logo', '')) }}" alt="Logo">
+                        <img class="logo-image" src="{{ setting('app-logo', '') === '' ? baseUrl('/qu-white-logo.png') : baseUrl(setting('app-logo', '')) }}" alt="Logo">
                     @endif
                     @if (setting('app-name-header'))
                         <span class="logo-text">{{ setting('app-name') }}</span>

@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group" comment-add-button>
-            <button type="button" action="addComment" class="button outline">Add Comment</button>
+            <button type="button" action="addComment" class="button outline">{{trans('entities.add_comment')}}</button>
         </div>
     @endif
 

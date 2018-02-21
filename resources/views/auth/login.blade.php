@@ -1,4 +1,5 @@
 @extends('public')
+{{app()->setLocale('ar')}}
 
 @section('header-buttons')
     @if(setting('registration-enabled', false))

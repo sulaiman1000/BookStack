@@ -17,6 +17,7 @@ class HomeController extends Controller
     {
         $this->entityRepo = $entityRepo;
         parent::__construct();
+        app()->setLocale('ar');
     }
 
 

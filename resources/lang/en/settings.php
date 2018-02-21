@@ -119,6 +119,7 @@ return [
     // DELETE BELOW IF COPIED FROM EN
     ///////////////////////////////////
     'language_select' => [
+        'ar'=> 'العربية',
         'en' => 'English',
         'de' => 'Deutsch',
         'es' => 'Español',

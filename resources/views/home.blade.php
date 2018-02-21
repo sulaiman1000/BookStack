@@ -1,4 +1,5 @@
 @extends('simple-layout')
+{{app()->setLocale('ar')}}
 
 @section('toolbar')
     <div class="col-sm-6 faded">
