@@ -1,6 +1,4 @@
 @extends('public')
-{{app()->setLocale('ar')}}
-
 @section('header-buttons')
     @if(setting('registration-enabled', false))
         <a href="{{ baseUrl("/register") }}"><i class="zmdi zmdi-account-add"></i>{{ trans('auth.sign_up') }}</a>

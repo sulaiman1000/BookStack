@@ -20,7 +20,8 @@
         "socialiteproviders/microsoft-azure": "^3.0",
         "socialiteproviders/okta": "^1.0",
         "anam/phantommagick": "^2.0",
-        "anam/phantomjs-linux-x86-binary": "^2.1"
+        "anam/phantomjs-linux-x86-binary": "^2.1",
+        "niklasravnsborg/laravel-pdf": "^2.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
