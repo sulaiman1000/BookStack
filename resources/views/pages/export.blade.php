@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" dir="rtl">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{{ $page->name }}</title>
 
     <style>
         @if (!app()->environment('testing'))
-        {!! file_get_contents(public_path('/css/export-styles.css')) !!}
+        {!! file_get_contents(public_path('/css/ar/export-styles.css')) !!}
         @endif
     </style>
     @yield('head')

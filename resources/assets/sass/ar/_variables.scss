@@ -27,8 +27,12 @@ $-xs: 6px;
 $-xxs: 3px;
 
 // Fonts
-$text:'DINNextLTArabic-Medium';
-$mono: 'DINNextLTArabic-Medium';
+$text: "DejaVu Sans Mono", BlinkMacSystemFont,
+"Segoe UI", "Oxygen", "Ubuntu", "Roboto", "Cantarell",
+"Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif;
+$mono: "DejaVu Sans Mono", "DejaVu Sans Mono", "Ubunto Mono", Monaco, monospace;
+
 $heading: $text;
 $fs-m: 15px;
 $fs-s: 14px;

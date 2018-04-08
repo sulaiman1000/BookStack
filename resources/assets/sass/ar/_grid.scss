@@ -131,14 +131,14 @@ body.flexbox {
     z-index: 5;
     position: fixed;
     top: 0;
-    padding-right: $-m;
+    padding-left: $-m;
     width: 30%;
-    left: 0;
+    right: 0;
     height: 100%;
     overflow-y: auto;
     -ms-overflow-style: none;
     //background-color: $primary-faded;
-    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
     &::-webkit-scrollbar { width: 0 !important }
   }
 }
